@@ -1,12 +1,11 @@
-
 // Load randomly generated password for symmetric encryption
 // TODO: Use more secure algorithms + salting
 const crypto = require('crypto');
 const crypto_algorithm = 'aes-256-cbc';
+const fs = require('fs')
 
 // TODO: Is it more secure to store this in a file?
-const crypto_password = process.env.ENCRYPTION_PASSWORD
-
+const crypto_password = fs.readFileSync(process.env.ENCRYPTION_PASSWORD, 'utf8')
 const crypto_hash_algorithm = 'sha256';
 
 function encrypt(data) {

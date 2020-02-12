@@ -46,7 +46,7 @@ Most configurable parameters are passed to the backend and frontend applications
 | DB_NAME             | Name of MongoDB database                   |
 | OUH_CLIENT_ID       | 1UpHealth Client ID                        |
 | OUH_CLIENT_SECRET   | 1UpHealth Client Secret                    |
-| ENCRYPTION_PASSWORD | 32-character password for token encryption |
+| ENCRYPTION_PASSWORD | Filepath containing randomized encryption password string |
 
 Notes:
 * Including variables in React requires they be prefixed with `REACT_APP`
