@@ -147,3 +147,4 @@ Bugs/Future Improvements:
   * Remove hardcoding of API versions, network protocols, etc.
 * Create separate environments (e.g. `prod` and `dev`) for running frontend and backend applications
 * Create more utility functions to help improve code readability
+* Add unit and integration tests!
