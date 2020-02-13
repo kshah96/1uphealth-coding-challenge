@@ -101,7 +101,8 @@ Notes:
 * Expiration time of `refreshToken` is also stored in DB, and token is refreshed upon login if needed
 
 Bugs/Future Improvements:
-* This is an inherently flawed approach because password authentication has not yet been added, so anyone can log in as any user
+* This is an inherently flawed approach because password authentication has not yet been added, so anyone can log in as any user (also, email verification has not yet been implemented)
+* Should configure server to use HTTPS for secure transfer of data (especially if/when password is implemented)
 * Eliminate requirement for MongoDB, as credentials are stored in cookies anyways
 * Add feature to re-generate access token if refresh token becomes invalid
 * Consider other approaches for encrypting sensitive data (e.g. storing encryption password on another machine, or in DB itself)
